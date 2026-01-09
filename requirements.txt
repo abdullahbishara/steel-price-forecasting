@@ -1,0 +1,16 @@
+# Steel Price Forecasting Dashboard - Streamlit Cloud Deployment
+# Minimal dependencies for dashboard only
+
+# Dashboard Framework
+streamlit>=1.28.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.17.0
+
+# Machine Learning (for model predictions)
+scikit-learn>=1.3.0
+scipy>=1.11.0

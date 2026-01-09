@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Data files - RAW only (keep processed data for dashboard)
+data/raw_pdfs/*.pdf
+
+# IMPORTANT: Keep these for Streamlit Cloud deployment
+# data/extracted/*.csv - NEEDED for dashboard
+# data/features/*.csv - NEEDED for dashboard
+# data/validation/*.csv - NEEDED for dashboard
+
+# Output files
+output/models/*.pkl
+output/reports/*.html
+output/reports/*.pdf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+~*
+
+# Secrets
+.env
+credentials.json
+secrets.yaml

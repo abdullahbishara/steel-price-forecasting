@@ -1,0 +1,9 @@
+date,source,symbol,price_low,price_mid,price_high,currency,unit,pdf_filename
+2025-08-20,Fastmarkets,rebar_uae_domestic,2210.0,2295.0,2380.0,AED,mt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
+2025-08-20,Fastmarkets,rebar_uae_import,605.0,607.5,610.0,USD,mt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
+2025-08-20,Fastmarkets,rebar_china_domestic,5.0,1890.0,3775.0,AED,cwt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
+2025-08-20,Fastmarkets,hrc_uae,510.0,522.5,535.0,USD,mt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
+2025-08-20,Fastmarkets,hrc_china_domestic,5.0,1890.0,3775.0,CNY,cwt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
+2025-08-20,Fastmarkets,hrc_china_export,483.0,483.0,483.0,AED,cwt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
+2025-08-20,Fastmarkets,billet_china,3020.0,3020.0,3020.0,CNY,mt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
+2025-08-20,Fastmarkets,hdg_china_export,595.0,605.0,615.0,USD,mt,Fastmarkets Steel prices & news Daily 2025-08-20_250820_143529.pdf
