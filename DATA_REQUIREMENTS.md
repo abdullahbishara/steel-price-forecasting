@@ -91,7 +91,7 @@ These raw materials directly impact rebar production costs. Essential for accura
 **Data sources:**
 - Fastmarkets scrap indices
 - Argus Ferrous Scrap
-- Your local scrap procurement prices
+- Our local scrap procurement prices
 
 ### 5. Steel Billet Prices
 
@@ -105,7 +105,7 @@ These raw materials directly impact rebar production costs. Essential for accura
 **Data sources:**
 - Fastmarkets billet prices
 - Argus Steel
-- Your billet procurement records
+- Our billet procurement records
 
 ---
 
@@ -259,7 +259,7 @@ date,symbol,price_usd_mt,source
 
 ## 💼 DATA SOURCES & SUBSCRIPTIONS
 
-If your organization doesn't have these data sources, here are recommendations:
+If Our organization doesn't have these data sources, here are recommendations:
 
 ### Commercial Data Providers:
 
@@ -297,32 +297,13 @@ If your organization doesn't have these data sources, here are recommendations:
 
 ### Internal Sources:
 
-- **Your procurement records**: Historical rebar purchase prices
+- **Our procurement records**: Historical rebar purchase prices
 - **Supplier quotes**: Regular price quotes from steel suppliers
 - **Industry reports**: Monthly/quarterly price reports from trade associations
 
 ---
 
-## 🔐 DATA SECURITY & CONFIDENTIALITY
-
-### Our Commitments:
-
-1. **Data Protection**
-   - All data stored securely on encrypted systems
-   - Access restricted to project team only
-   - No sharing with third parties without permission
-
-2. **Confidentiality**
-   - Proprietary pricing data treated as confidential
-   - Model outputs can be shared internally only (unless agreed otherwise)
-   - Raw data never exposed in public dashboard
-
-3. **Compliance**
-   - GDPR compliant (if applicable)
-   - Follow your organization's data governance policies
-   - Sign NDA if required
-
-### Your Requirements:
+### Our Requirements:
 
 Please specify:
 - [ ] Data classification level (Public/Internal/Confidential/Restricted)
@@ -361,14 +342,6 @@ Please specify:
 
 ---
 
-## 📧 DATA SUBMISSION
-
-### Please provide data to:
-
-**Contact**: [Your Name/Team]
-**Email**: [Your Email]
-**Alternative**: [Shared drive link or FTP details]
-
 ### Submission Checklist:
 
 - [ ] Data files (CSV/Excel)
@@ -390,7 +363,7 @@ Please specify:
 
 ### Q3: What if we don't have access to commercial data providers?
 **A**: We can work with:
-1. Your internal procurement records (rebar purchase prices)
+1. Our internal procurement records (rebar purchase prices)
 2. Free public sources (oil, FX, freight indices)
 3. Supplier quotes and market reports
 4. Start with limited features and expand later
@@ -409,33 +382,14 @@ Please specify:
 
 ### Q6: Can we start with partial data?
 **A**: Yes! Minimum viable dataset:
-- Rebar prices (your procurement records)
+- Rebar prices (Our procurement records)
 - Iron ore prices (public indices available)
 - Basic model can start with just these two
 
 ---
 
-## 📞 SUPPORT & QUESTIONS
-
-For questions about these data requirements:
-
-**Technical questions**: [Your technical contact]
-**Data sourcing questions**: [Your data team contact]
-**Budget/procurement questions**: [Your procurement contact]
-
 **Project repository**: https://github.com/abdullahbishara/steel-price-forecasting
 **Live dashboard**: https://steel-price-forecasting-2ppxjawkb8yjptlr8pujyi.streamlit.app/
-
----
-
-## ✅ NEXT STEPS
-
-1. **Review this document** with your data team
-2. **Identify available data sources** (internal and external)
-3. **Determine budget** for commercial subscriptions (if needed)
-4. **Set timeline** for data delivery
-5. **Designate point of contact** for ongoing data updates
-6. **Schedule kickoff meeting** to discuss implementation
 
 ---
 
