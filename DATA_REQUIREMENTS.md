@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Executive Summary
+## Executive Summary
 
 We need daily time-series data for steel prices and related market indicators to train our forecasting model. The model currently achieves 99.84% accuracy with synthetic data and is ready for real data integration.
 
@@ -17,7 +17,7 @@ We need daily time-series data for steel prices and related market indicators to
 
 ---
 
-## 🎯 PRIMARY DATA REQUIRED (Critical)
+## PRIMARY DATA REQUIRED (Critical)
 
 ### 1. Target Variable - Steel Rebar Prices
 
@@ -109,7 +109,7 @@ These raw materials directly impact rebar production costs. Essential for accura
 
 ---
 
-## ⚡ EXTERNAL FEATURES (Tier 2 - Medium Priority)
+## EXTERNAL FEATURES (Tier 2 - Medium Priority)
 
 These market and macro indicators improve model accuracy.
 
@@ -159,7 +159,7 @@ These market and macro indicators improve model accuracy.
 
 ---
 
-## 📊 DATA FORMAT REQUIREMENTS
+## DATA FORMAT REQUIREMENTS
 
 ### Preferred Format: CSV Files
 
@@ -193,7 +193,7 @@ date,symbol,price_usd_mt,source
 
 ---
 
-## 📅 DATA QUALITY REQUIREMENTS
+## DATA QUALITY REQUIREMENTS
 
 ### Essential Quality Criteria:
 
@@ -218,25 +218,7 @@ date,symbol,price_usd_mt,source
 
 ---
 
-## 🔄 DATA UPDATE SCHEDULE
-
-### Initial Data Delivery:
-- **Target date**: [Specify date]
-- **Historical period**: [Start date] to [End date]
-- **Delivery method**: Email, shared drive, FTP, or API access
-
-### Ongoing Updates:
-- **Frequency**: Daily (preferred) or weekly
-- **Delivery time**: By 9:00 AM UAE time
-- **Delivery method**:
-  - Option 1: Automated API feed (best)
-  - Option 2: Email attachment (CSV)
-  - Option 3: Shared folder (Google Drive, OneDrive, Dropbox)
-  - Option 4: SFTP/FTP server
-
----
-
-## 📦 PRIORITY CHECKLIST
+## PRIORITY CHECKLIST
 
 ### Must Have (Cannot proceed without):
 - [ ] UAE Rebar import prices (12+ months daily data)
@@ -257,9 +239,9 @@ date,symbol,price_usd_mt,source
 
 ---
 
-## 💼 DATA SOURCES & SUBSCRIPTIONS
+## DATA SOURCES & SUBSCRIPTIONS
 
-If Our organization doesn't have these data sources, here are recommendations:
+If our organization doesn't have these data sources, here are recommendations:
 
 ### Commercial Data Providers:
 
@@ -313,7 +295,7 @@ Please specify:
 
 ---
 
-## 🚀 INTEGRATION TIMELINE
+## INTEGRATION TIMELINE
 
 ### Phase 1: Data Acquisition (Week 1-2)
 - Receive historical data files
@@ -353,7 +335,7 @@ Please specify:
 
 ---
 
-## ❓ FREQUENTLY ASKED QUESTIONS
+## FREQUENTLY ASKED QUESTIONS
 
 ### Q1: Why do we need daily data?
 **A**: Steel prices change daily based on raw material costs, supply/demand, and market sentiment. Daily data allows the model to capture these short-term dynamics and provide accurate next-day forecasts.
