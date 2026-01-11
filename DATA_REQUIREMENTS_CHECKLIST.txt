@@ -1,0 +1,254 @@
+================================================================================
+                    STEEL PRICE FORECASTING PROJECT
+                        DATA REQUIREMENTS CHECKLIST
+================================================================================
+
+Project Status: Prototype deployed | Ready for real data integration
+Dashboard: https://steel-price-forecasting-2ppxjawkb8yjptlr8pujyi.streamlit.app/
+
+================================================================================
+CRITICAL DATA REQUIRED (Must Have - Cannot proceed without)
+================================================================================
+
+[PRIORITY 1 - ESSENTIAL]
+
+[ ] 1. UAE REBAR IMPORT PRICES
+    Product: Rebar / Reinforcing bar
+    Region: UAE import (CFR/CIF)
+    Unit: USD per metric tonne
+    Period: 12-24 months daily data
+    Source: Internal records / Fastmarkets / Argus
+
+[ ] 2. IRON ORE PRICES
+    Specification: 62% Fe content, CFR China
+    Unit: USD/mt
+    Period: 12-24 months daily data
+    Source: Fastmarkets / Platts IODEX / Argus
+
+[ ] 3. COKING COAL PRICES
+    Specification: Premium coking coal, CFR China
+    Unit: USD/mt
+    Period: 12-24 months daily data
+    Source: Fastmarkets / Platts / Argus
+
+================================================================================
+IMPORTANT DATA (Should Have - Significantly improves accuracy)
+================================================================================
+
+[PRIORITY 2 - HIGHLY RECOMMENDED]
+
+[ ] 4. FERROUS SCRAP PRICES
+    Types: HMS 1/2, Shredded, or Busheling
+    Region: CFR Turkey or CFR China
+    Unit: USD/mt
+    Period: 12-24 months (daily/weekly)
+
+[ ] 5. STEEL BILLET PRICES
+    Grade: 3SP or 5SP
+    Region: CIS export or Middle East
+    Unit: USD/mt
+    Period: 12-24 months (daily/weekly)
+
+[ ] 6. BRENT CRUDE OIL PRICES
+    Specification: Brent crude futures
+    Unit: USD per barrel
+    Period: 12-24 months daily
+    Source: Bloomberg / EIA (free)
+
+[ ] 7. BALTIC DRY INDEX
+    Type: Freight cost index
+    Unit: Index points
+    Period: 12-24 months daily
+    Source: Baltic Exchange (free/public)
+
+================================================================================
+ADDITIONAL DATA (Nice to Have - Further enhancements)
+================================================================================
+
+[PRIORITY 3 - OPTIONAL ENHANCEMENTS]
+
+[ ] 8. NATURAL GAS PRICES
+    Type: TTF (Europe) or Henry Hub (US)
+    Unit: USD per MMBtu
+    Period: 12-24 months daily
+
+[ ] 9. USD/AED EXCHANGE RATE
+    Type: Spot exchange rate
+    Unit: Rate value
+    Period: 12-24 months daily
+    Source: Central Bank UAE (free)
+
+[ ] 10. CHINA MANUFACTURING PMI
+    Type: Economic indicator
+    Unit: Index (50 = threshold)
+    Period: 12-24 months monthly
+    Source: China NBS (free/public)
+
+================================================================================
+DATA FORMAT REQUIREMENTS
+================================================================================
+
+PREFERRED FORMAT: CSV or Excel
+
+Required columns:
+  - date          (YYYY-MM-DD format, e.g., 2024-01-15)
+  - symbol        (e.g., "rebar_uae_import", "iron_ore_62fe_cfr_china")
+  - price_usd_mt  (numeric value)
+
+Optional columns:
+  - price_low, price_high, volume, source
+
+Example:
+  date,symbol,price_usd_mt
+  2024-01-01,rebar_uae_import,607.50
+  2024-01-02,rebar_uae_import,609.25
+
+================================================================================
+DATA SOURCES - WHERE TO GET DATA
+================================================================================
+
+COMMERCIAL PROVIDERS (Require subscription):
+
+  [ ] Fastmarkets          - $15K-30K/year (Steel, iron ore, coal, scrap)
+  [ ] S&P Global Platts    - $20K-40K/year (Comprehensive coverage)
+  [ ] Argus Media          - $10K-25K/year (Steel, coal, freight)
+  [ ] SteelOrbis           - $3K-5K/year   (Steel prices only)
+
+INTERNAL SOURCES (Free):
+
+  [ ] Procurement records  - Your historical rebar purchases
+  [ ] Supplier quotes      - Regular price quotes from suppliers
+  [ ] Industry reports     - Monthly/quarterly reports
+
+PUBLIC/FREE SOURCES:
+
+  [ ] Baltic Dry Index     - Baltic Exchange (free)
+  [ ] Brent Oil            - EIA.gov (free with delay)
+  [ ] China PMI            - National Bureau of Statistics (free)
+  [ ] USD/AED FX           - Central Bank UAE (free)
+
+================================================================================
+DATA QUALITY CHECKLIST
+================================================================================
+
+Before submitting data, ensure:
+
+  [ ] Completeness: Less than 5% missing values
+  [ ] Consistency: Same units throughout (USD/mt)
+  [ ] Date format: YYYY-MM-DD (e.g., 2024-01-15)
+  [ ] No duplicates: One price per symbol per date
+  [ ] Reasonable range: Rebar $300-$1000/mt, Iron ore $60-$180/mt
+  [ ] Source documented: Know where each price came from
+
+================================================================================
+MINIMUM VIABLE DATASET
+================================================================================
+
+If you can ONLY provide limited data, start with:
+
+  ✓ UAE Rebar prices (from procurement records) - 12 months
+  ✓ Iron ore 62% Fe (from public sources or Fastmarkets) - 12 months
+
+The model can work with just these two, then expand later!
+
+================================================================================
+DATA DELIVERY OPTIONS
+================================================================================
+
+Choose one method for ongoing updates:
+
+  [ ] Option 1: Email attachment (CSV file daily/weekly)
+  [ ] Option 2: Shared drive (OneDrive, Google Drive, Dropbox)
+  [ ] Option 3: API access (automated feed - best option)
+  [ ] Option 4: SFTP/FTP server (secure file transfer)
+  [ ] Option 5: Database connection (direct query)
+
+Preferred delivery time: 9:00 AM UAE time daily
+
+================================================================================
+TIMELINE
+================================================================================
+
+Phase 1 (Week 1-2):   Receive historical data, validate quality
+Phase 2 (Week 2-3):   Process and integrate data
+Phase 3 (Week 3-4):   Retrain model with real data
+Phase 4 (Week 4-5):   Deploy to production dashboard
+Ongoing:              Daily automated updates
+
+Total time to production: 4-5 weeks from data receipt
+
+================================================================================
+BUDGET CONSIDERATIONS
+================================================================================
+
+Data subscription costs (annual):
+
+  Budget Option 1: $0
+    - Use internal procurement records
+    - Free public sources (oil, FX, PMI, freight)
+    - Limited features but functional
+
+  Budget Option 2: $3,000-10,000/year
+    - Basic steel price subscription (SteelOrbis or Fastmarkets Basic)
+    - Cover critical features only
+
+  Budget Option 3: $15,000-40,000/year
+    - Comprehensive package (Fastmarkets or Platts)
+    - All features for maximum accuracy
+
+  Recommended: Start with Option 1 or 2, upgrade if needed
+
+================================================================================
+EXPECTED BUSINESS VALUE
+================================================================================
+
+With real data, the forecasting system will deliver:
+
+  ✓ Daily price forecasts (1-day, 7-day, 30-day ahead)
+  ✓ 95% confidence intervals for risk management
+  ✓ Cost savings: $25,000-$250,000 annually (depends on volume)
+  ✓ Better procurement timing (buy low, avoid highs)
+  ✓ Improved budget accuracy for planning
+  ✓ Competitive advantage in price negotiations
+
+ROI: 3-10x return on data subscription costs
+
+================================================================================
+CONTACT & NEXT STEPS
+================================================================================
+
+1. Review this checklist with your data team
+2. Identify available sources (check boxes above)
+3. Determine budget for subscriptions (if needed)
+4. Collect historical data files (12-24 months)
+5. Set up ongoing delivery mechanism
+6. Schedule kickoff meeting to discuss
+
+Questions? Contact:
+  Email: [Your Email]
+  Phone: [Your Phone]
+  Dashboard: https://steel-price-forecasting-2ppxjawkb8yjptlr8pujyi.streamlit.app/
+
+================================================================================
+ATTACHMENTS TO REFERENCE
+================================================================================
+
+  1. DATA_REQUIREMENTS.md            - Full technical specifications
+  2. DATA_REQUEST_EMAIL_TEMPLATE.md  - Email template to send to team
+  3. This checklist                  - Quick reference
+
+All files available in project folder:
+  c:\Users\abdul\steel_price_forecasting\
+
+================================================================================
+PROJECT LINKS
+================================================================================
+
+  GitHub Repo:  https://github.com/abdullahbishara/steel-price-forecasting
+  Live Dashboard: https://steel-price-forecasting-2ppxjawkb8yjptlr8pujyi.streamlit.app/
+  Documentation: See README_DEPLOYMENT.md in project folder
+
+================================================================================
+                            READY TO PROCEED!
+                Print this checklist and share with your team
+================================================================================
