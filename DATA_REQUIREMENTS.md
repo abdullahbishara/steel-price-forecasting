@@ -43,7 +43,7 @@ date,symbol,price_usd_mt
 - Argus Steel
 - Platts/S&P Global
 - World Steel Prices
-- Your internal procurement records
+- Our internal procurement records
 
 ---
 
